@@ -19,3 +19,9 @@ class TestMinimumBS:
         handler = BinarySearchMinimum(array)
         minimum = handler.get_minimum()
         assert minimum == -4
+
+    def test_with_alphabets(self):
+        array = ['g', 'e', 'z']
+        handler = BinarySearchMinimum(array)
+        minimum = handler.get_minimum()
+        assert minimum == 'e'
